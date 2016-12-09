@@ -1,0 +1,189 @@
+def p
+  puts ">>"
+end
+
+puts "Greetings weary traveller, what is your name?"
+name = $stdin.gets.chomp
+puts "And your favourtie song?"
+song = $stdin.gets.chomp
+
+
+p;p;p;p
+puts "Well #{name} you're falling."
+p;p;p;p
+puts "Falling fast."
+p;p;p
+puts "You crash through the tops of some trees\nHitting branches on your way down"
+puts "Remarkably you hit the floor and stand up relatively unscathed\nNaught but a few scratches and some clothes that are a little worse for wear."
+p
+p
+puts "You look around to get your bearings."
+puts "To the north is a cave,\nTo the south a path leading to a clearing."
+puts "Easterly and Western routes are blocked by trees."
+puts "Which way do you go?"
+direction = $stdin.gets.chomp.upcase
+
+if direction == "NORTH"
+  p
+  p
+  p
+  puts "The cave is dimly lit."
+  puts "You continue towards the light"
+  puts "You discover that the source of the light is a torch hung between two doors."
+  puts "So"
+  p
+  puts """\t1- Right door
+  \t2- Left door
+  \t3- Or run?"""
+  door = $stdin.gets.chomp.to_i
+  if door == 1
+    puts "The door squeaks slightly as you open it."
+    puts "As you walk into this new room the door is closed behind you."
+    puts "The room is pitch black, you find yourself in a circular office."
+    puts "The walls of the office are the same grey stone that made up the cave before it."
+    puts "In the centre of the room, around twenty paces away is a desk with a naked lightbulb above that lights the room."
+    puts "Sat behind the desk is a bear."
+    p
+    p
+    puts """What do you do?
+    \t1- Aproach the bear and ask about the office.
+    \t2- Grab a rock from the floor and throw it at the bear.
+    \t3- Circle the bear and search for more options."""
+    p
+    p
+    bear = $stdin.gets.chomp.to_i
+    if bear == 1
+      p
+      p
+      puts "As you aproach the desk the bear stands and claws away his computer, growling loudly."
+      puts "You start sweating profusely but continue walking."
+      puts "You stand opposite the bear, he's around two feet taller than you."
+      puts "The bear raises his left paw and puts it on your shoulder."
+      puts "With his right paw he slams the desk."
+      puts "\tBalloons fall from the roof and #{song} starts playing."
+      puts "\t\"You have won!\" Says the bear \"You may leave as a free man\""
+    elsif bear == 2
+      puts "The bear gets angry..."
+      p
+      p
+      puts "Thankfully you don't have time to regret your decision."
+      puts "As your head is swiftly removed from your shoulders and your innards are feasted upon."
+      puts "It was a giant office bear dude, that was stupid."
+    elsif bear == 3
+      p
+      p
+      puts "You walk round the perimiter of the cirular stone office."
+      puts "The bear looks up from his computer screen a few times...\v...but doesn't seem to care."
+      puts "As you wonder round you start to think that you might have seen this but of wall before."
+      puts "You walk futher and further around the circle."
+      puts "Never sure of where you are."
+      puts "Eventually you succumb to the exhaustion and with a small wimper fall to the floor."
+      puts "The bear takes pity on you and curls up next to you."
+      puts "You both wake at a similar time and you reflexively snuggle into the bear."
+      puts "Your spend the rest of your days on the floor with the bear because you're both too comfy to leave."
+    else
+      puts "Your lack of decision displeases the bear."
+      puts "He bounds up to you, licks your face with a rough tongue and you become paralysed."
+      puts "You are slowly eaten over the next three days from the feet up."
+      puts "Well done..."
+      p
+      p
+    end
+  elsif door == 2
+    puts "You open the door and see a rope hanging in the middle of a shaft."
+    puts "From the relatively small opening of the door you can see neither the top nor bottom of the shaft."
+    puts "Given that you don't fancy a possibly infinite climb upwards you grab the rope and slide down into the abyss."
+    puts "After a solid minute of rope sliding (and some serious burns on your hand) you reach the floor of a giant cavern."
+    puts "The cavern is roughly dome shaped with a large plinth in the centre."
+    puts "Around the plinth are thousands of huge bees held round the waist by ropes constucting blocks of wax."
+    puts "On top of the plinth is an octopus of architectural proportions."
+    puts "Each of his arms is as long as a train and with them he works a series of levers."
+    puts "The levers seem to be moving the bees work by crane into place\nA model of the octopus at least 5 times his size that is being constructed behind him."
+    p
+    p
+    puts """What do you do?
+    \t1- Free some bees.
+    \t2- Approch the octopus.
+    \t3- Turn around.
+    \t4- Sing #{song}.
+    """
+    octopus = $stdin.gets.chomp.to_i
+
+  elsif door == 3
+    puts "You flee, just as you reach the warm embrace of the sun outside, a roar comes from the depths of the cave."
+    puts "An eagle with the face of a man flies from the mouth of the cave and carries you by the foot upwards."
+    puts "From here you can see for miles and you ponder on the beauty of the world."
+    puts "The eagle-man releases his grip and you fall, accepting your death as the earth hurtles toward you."
+    puts "It has been an odd day."
+  end
+    if octopus == 1
+      p
+      p
+      puts "On the floor in front of you you spot a sharp looking piece of flint."
+      puts "You fight through the stems of super sized flowers and reach a metal ring that is about 5 meters across."
+      puts "The ring is firmly set in the soft ground beneath it and several hundered ropes are attached to the top."
+      puts "While the octopus faces away you begin severing the ropes that hold the bee slaves in place."
+      puts "One by one they land, circling you completely."
+      puts "After some time you are completely surrounded and the bees start to dig with their stingers."
+      puts "The ground shakes and the now empty ring wobbles as hot steam escapes."
+      p
+      p
+      puts """What do you do?
+      \t1- Grab the ring.
+      \t2- Move away.
+      """
+      p
+      p
+      p
+      ring = $stdin.gets.chomp.to_i
+      if ring == 1
+        puts "You grab the ring and the ground continues to shake."
+        puts "Before long the ring lifts high into the air taking you with it."
+        puts "You turn around and notice that the ring is through the nose of a huge bull that is digging its way from the earth."
+        puts "You run down the snout of the bull and climb to the spot between his ears and cling to his slightly musty hair."
+        puts "The bull shakes himself of earth and bellows loudly."
+        puts "The octopus turns and jumps for the bull."
+        puts "This startles you and you lose your grip and footing and fall from the bull."
+        puts "You make a satisfying thump as you hit the floor."
+        puts "The octopus and bull continue to fight above your liqidy corpse and the bees can do nothing but look on, once again attached to their tethers."
+      else
+        puts "You fight your way through the bees you freed as they are preocupied with the act of digging."
+        puts "You stand in the place where you dropped and look on in horror as a huge bull, attached to the ring by the nose emerges from the ground."
+        puts "The bull lets out a thunderous snort and the octopus turns and attacks."
+        puts "The bees you freed fly one by one fly at the ceiling, falling dead after they do so."
+        puts "The octopus is attached to the bull, unrelenting in its' attack."
+        puts "The final bee flies up to you and makes it clear that you should get on its fluffy back."
+        puts "You do so and it too flies at the ceiling."
+        puts "As you approach you realise that the other bees have given their lives to build a tunnel upwards."
+        puts "You fly at the tunnel and break through the thin layer of earth atop it."
+        puts "Well done, you have got back to where you started but now you have a giant bee steed, you win!"
+      end
+    elsif octopus == 2
+      puts "You regret this decision immediately."
+      puts "The octopus notices your presence, breaks the top off of a lever and throws it in your direction."
+      puts "Several tonnes of metal come flying at your face and you are quickly turned into a stain on the floor."
+
+    elsif octopus == 3
+      p;p
+      puts "You turn and notice a hole in the base of the cavernous dome."
+      puts "The hole is around 2 meters wide so you walk through easily."
+      puts "You can see into a much smaller domed cave below you."
+      puts "In the centre is a plinth with a desicated octopus in the middle."
+      puts "Slightly nearer are eight foundation stones that once held the octopus king that now reigns over the kingdom behind you."
+      puts "Realising the pattern of growth here you turn around but lose your footing."
+      puts "You are now helpless to stop the havok that the octopus king will reap upon the earth onces he breaks free of his cavern."
+
+    elsif octopus == 4
+      puts "You start to sing, one of the bees turns its' head and flies into the giant flowers below it."
+      puts "The bee emerges and places a microphone of wax infront of you."
+      puts "Your voice reverberates around the walls of the cave and the octopus loosens his grip on his levers."
+      puts "The octopus propels himself onto a smaller platform infront of him and it slowly falls."
+      puts "As it does a spotlight shines on you and baloons fall from the ceiling. You have a truly magical voice."
+      puts "The octopus is happy and you help him run his bee kingdom, completely oblivious to what is to come."
+  end
+end
+
+if direction === "SOUTH"
+  puts "You enter the clearing and immediately hit by a meteor."
+  puts "Run the programme again and go north, i put some effort into north..."
+end
